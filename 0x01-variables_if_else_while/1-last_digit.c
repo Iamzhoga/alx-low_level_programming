@@ -3,8 +3,10 @@
 #include <time.h>
 
 /**
- * betty styledoc for function maingoes here
- */
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+*/
 
 int main(void)
 {
