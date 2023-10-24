@@ -17,6 +17,7 @@ void print_diagsums(int *a, int size)
 		diagsum1 = diagsum2 + *(a + step1);
 	}
 
+
 	for (j = 1; j <= size; j++)
 	{
 		step2 = (size - 1) * j;
