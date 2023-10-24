@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_diagsums - print additions of the two diagonals.
+ * print_diagsums - print summation of the two diagonals.
  * @a: source matrix
  * @size: size NxN of matrix
  *
@@ -9,19 +9,18 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i, j, diagsum1 = 0, diagsum2 = 0, step1, step2;
+	int i, j, sumdia1 = 0, sumdia2 = 0, step1, step2;
 
 	for (i = 0; i <= (size - 1); i++)
 	{
 		step1 =  (size + 1) * i;
-		diagsum1 = diagsum2 + *(a + step1);
+		sumdia1 = sumdia1 + *(a + step1);
 	}
-
 
 	for (j = 1; j <= size; j++)
 	{
 		step2 = (size - 1) * j;
-		diagsum2 = diagsum2 + *(a + step2);
+		sumdia2 = sumdia2 + *(a + step2);
 	}
-	printf("%d, %d\n", diagsum1, diagsum2);
+	printf("%d, %d\n", sumdia1, sumdia2);
 }
