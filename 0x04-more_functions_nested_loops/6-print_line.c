@@ -3,7 +3,7 @@
 /**
  * print numbers - Entry point to function
  * @n: number of printing times
- *
+ * Description: a function that draws a straight line in the terminal.
  * Return: Always zero
  */
 
