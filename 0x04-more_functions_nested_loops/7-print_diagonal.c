@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_diagonal - Draw a diagonal line of backslashes on the terminal.
  * @n: variable inputation.
