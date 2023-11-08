@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print numbers - Entry point to function
+ * print_line - Entry point to function.
+ * Description: draws a straight line in the terminal.
  * @n: number of printing times
- * Description: a function that draws a straight line in the terminal.
  * Return: Always zero
  */
 
