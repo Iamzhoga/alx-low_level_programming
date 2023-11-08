@@ -4,11 +4,11 @@
 /**
  * struct dog - dog class
  *
- * @name: Name of the dog
+ * @name: Name of dog
  *
- * @age: Age of the dog
+ * @age: Age of dog
  *
- * @owner: Owner of the dog
+ * @owner: Owner of dog
  */
 
 struct dog
