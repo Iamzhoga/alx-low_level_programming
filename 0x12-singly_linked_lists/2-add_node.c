@@ -2,24 +2,41 @@
 #include <string.h>
 
 /**
- *list_len - returns the number of elements in a linked list_t list.
- *@h:parameter 1.
+ *add_node - Adds a new node at the beginning of a list.
+ *@head: A pointer to the head of the structure list_t list.
+ *@str: string to be added to the structure list_t list.
  *
- *Return: Number of elements.
+ *Return: If the function fails - NULL.
+ *        Otherwise - Address of the new element.
  */
 
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
-	size_t elements;
+char *duplicate;
+int length;
+list_t *newptr;
 
-	elements = 0;
+newptr = malloc(sizeof(list_t));
+if (newptr == NULL)
+return (NULL);
 
-	while (h)
-	{
+duplicate = strdup(str);
+if (duplicate == NULL)
+{
+free(newptr);
+return (NULL);
+}
 
-		elements++;
-		h = h->next;
+length = 0;
+while (str[length])
 
-	}
-	return (elements);
+length++;
+
+newptr->str = duplicate;
+newptr->len = length;
+newptr->next = *head;
+
+*head = newptr;
+
+return (newptr);
 }
